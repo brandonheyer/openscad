@@ -17,7 +17,7 @@ $fn = 32;
 Peg_Size = 30;
 
 // The radius of the peg hook, to middle of hook
-Peg_Rotation_Radius = 50;
+Peg_Rotation_Radius = 40;
 
 // The rotation angle of the peg hook
 Peg_Rotation_Angle = 45;
@@ -77,11 +77,11 @@ intersection() {
       
       translate([PEG_R - BASE_D_4 / 2, -BASE_D_4, 0]) 
         mirror([0, 1, 0]) 
-          rotate([0, 0, -PEG_THETA + 10])
+          rotate([0, 0, -PEG_THETA])
             translate([-PEG_R, 0, ex / 2])
               rotate([0, 0, -15])  
-                scale([.5, 1.3, .8])
-                  sphere(PEG_D, $fn = $preview ? 32 : 64);
+                scale([.5, 1, .8])
+                  sphere(PEG_D * 1.2, $fn = $preview ? 32 : 64);
     }
   }
   
