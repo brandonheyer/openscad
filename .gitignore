@@ -1,3 +1,4 @@
 *.gcode
 .ds_store
 .vscode/settings.json
+ignored/*
