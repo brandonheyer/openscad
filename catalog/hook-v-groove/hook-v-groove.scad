@@ -17,10 +17,10 @@ $fn = 32;
 Peg_Size = 30;
 
 // The radius of the peg hook, to middle of hook
-Peg_Rotation_Radius = 40;
+Peg_Rotation_Radius = 45;
 
 // The rotation angle of the peg hook
-Peg_Rotation_Angle = 45;
+Peg_Rotation_Angle = 40;
 
 BASE_D = Base_Height + 10;
 BASE_D_2 = BASE_D / 2;
@@ -70,7 +70,7 @@ intersection() {
           cube(ex * 2, center = true);
     }
 
-    peg(PEG_THETA - 10);
+    peg(PEG_THETA - PEG_D * 0.1);
 
     intersection() {
       peg(PEG_THETA + PEG_R);
